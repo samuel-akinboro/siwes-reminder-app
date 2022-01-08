@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reminder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <!-- <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div> -->
+
+
+    </div>
+
+   <header>
+     <h1>Reminder App</h1>
+     <h4>Hello Sam </h4>
+     <a href="logout.php">Log Out</a>
+</header>
+    <div class="container">
+        <div class="set">
+            <p id="demo"></p>
+            <div class="select-container">
+                <div class="select">
+                    <select id="months">
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sept</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select id="days">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select id="hours">
+                        <option value="0">12am</option>
+                        <option value="1">1am</option>
+                        <option value="2">2am</option>
+                        <option value="3">3am</option>
+                        <option value="4">4am</option>
+                        <option value="5">5am</option>
+                        <option value="6">6am</option>
+                        <option value="7">7am</option>
+                        <option value="8">8am</option>
+                        <option value="9">9am</option>
+                        <option value="10">10am</option>
+                        <option value="11">11am</option>
+                        <option value="12">12pm</option>
+                        <option value="13">1pm</option>
+                        <option value="14">2pm</option>
+                        <option value="15">3pm</option>
+                        <option value="16">4pm</option>
+                        <option value="17">5pm</option>
+                        <option value="18">6pm</option>
+                        <option value="19">7pm</option>
+                        <option value="20">8pm</option>
+                        <option value="21">9pm</option>
+                        <option value="22">10pm</option>
+                        <option value="23">11pm</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select id="minutes">
+                        <option value="1">1min</option>
+                        <option value="2">2min</option>
+                        <option value="3">3min</option>
+                        <option value="4">4min</option>
+                        <option value="5">5min</option>
+                        <option value="6">6min</option>
+                        <option value="7">7min</option>
+                        <option value="8">8min</option>
+                        <option value="9">9min</option>
+                        <option value="10">10min</option>
+                        <option value="11">11min</option>
+                        <option value="12">12min</option>
+                        <option value="13">13min</option>
+                        <option value="14">14min</option>
+                        <option value="15">15min</option>
+                        <option value="16">16min</option>
+                        <option value="17">17min</option>
+                        <option value="18">18min</option>
+                        <option value="19">19min</option>
+                        <option value="20">20min</option>
+                        <option value="21">21min</option>
+                        <option value="22">22min</option>
+                        <option value="23">23min</option>
+                        <option value="24">24min</option>
+                        <option value="25">25min</option>
+                        <option value="26">26min</option>
+                        <option value="27">27min</option>
+                        <option value="28">28min</option>
+                        <option value="29">29min</option>
+                        <option value="30">30min</option>
+                        <option value="31">31min</option>
+                        <option value="32">32min</option>
+                        <option value="33">33min</option>
+                        <option value="34">34min</option>
+                        <option value="35">35min</option>
+                        <option value="36">36min</option>
+                        <option value="37">37min</option>
+                        <option value="38">38min</option>
+                        <option value="39">39min</option>
+                        <option value="40">40min</option>
+                        <option value="41">41min</option>
+                        <option value="42">42min</option>
+                        <option value="43">43min</option>
+                        <option value="44">44min</option>
+                        <option value="45">45min</option>
+                        <option value="46">46min</option>
+                        <option value="47">47min</option>
+                        <option value="48">48min</option>
+                        <option value="49">49min</option>
+                        <option value="50">50min</option>
+                        <option value="51">51min</option>
+                        <option value="52">52min</option>
+                        <option value="53">53min</option>
+                        <option value="54">54min</option>
+                        <option value="55">55min</option>
+                        <option value="56">56min</option>
+                        <option value="57">57min</option>
+                        <option value="58">58min</option>
+                        <option value="59">59min</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select id="seconds">
+                        <option value="1">1sec</option>
+                        <option value="2">2sec</option>
+                        <option value="3">3sec</option>
+                        <option value="4">4sec</option>
+                        <option value="5">5sec</option>
+                        <option value="6">6sec</option>
+                        <option value="7">7sec</option>
+                        <option value="8">8sec</option>
+                        <option value="9">9sec</option>
+                        <option value="10">10sec</option>
+                        <option value="11">11sec</option>
+                        <option value="12">12sec</option>
+                        <option value="13">13sec</option>
+                        <option value="14">14sec</option>
+                        <option value="15">15sec</option>
+                        <option value="16">16sec</option>
+                        <option value="17">17sec</option>
+                        <option value="18">18sec</option>
+                        <option value="19">19sec</option>
+                        <option value="20">20sec</option>
+                        <option value="21">21sec</option>
+                        <option value="22">22sec</option>
+                        <option value="23">23sec</option>
+                        <option value="24">24sec</option>
+                        <option value="25">25sec</option>
+                        <option value="26">26sec</option>
+                        <option value="27">27sec</option>
+                        <option value="28">28sec</option>
+                        <option value="29">29sec</option>
+                        <option value="30">30sec</option>
+                        <option value="31">31sec</option>
+                        <option value="32">32sec</option>
+                        <option value="33">33sec</option>
+                        <option value="34">34sec</option>
+                        <option value="35">35sec</option>
+                        <option value="36">36sec</option>
+                        <option value="37">37sec</option>
+                        <option value="38">38sec</option>
+                        <option value="39">39sec</option>
+                        <option value="40">40sec</option>
+                        <option value="41">41sec</option>
+                        <option value="42">42sec</option>
+                        <option value="43">43sec</option>
+                        <option value="44">44sec</option>
+                        <option value="45">45sec</option>
+                        <option value="46">46sec</option>
+                        <option value="47">47sec</option>
+                        <option value="48">48sec</option>
+                        <option value="49">49sec</option>
+                        <option value="50">50sec</option>
+                        <option value="51">51sec</option>
+                        <option value="52">52sec</option>
+                        <option value="53">53sec</option>
+                        <option value="54">54sec</option>
+                        <option value="55">55sec</option>
+                        <option value="56">56sec</option>
+                        <option value="57">57sec</option>
+                        <option value="58">58sec</option>
+                        <option value="59">59sec</option>
+                    </select>
+                </div>
+            </div>
+            <div class="message">
+                <input type="text" placeholder="message"><br>
+                <button id="addBtn">Add</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="content">
+                    <p>This is the best app designed by siwes group 6 to remind you of the special events that you won't want to miss</p>
+                </div>
+                <button onclick="deteleteIntro()" class="about">remove</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const button = document.querySelector("#addBtn");
+        const input = document.querySelector("input");
+        const modal = document.querySelector(".modal");
+        const modalClose = document.querySelectorAll(".close");
+        
+        // functions
+        function myFunction() {
+        var d = new Date();
+        var n = d.toLocaleTimeString();
+        document.getElementById("demo").innerHTML = n;
+        }
+
+        modalClose.forEach(btn => {
+            btn.addEventListener("click", ()=> modal.style.display = "none")
+        });
+
+        function deteleteIntro(){
+            let about = document.querySelector(".about");
+            about.parentElement.remove()
+        }
+
+        setInterval(myFunction, 1000);
+
+        const alarm = (message, year, month, day, hour, min, sec) =>{
+        var reminderDate = new Date(year, month - 1, day, hour, min, sec).getTime();
+        var currentDate = new Date().getTime();
+        var r = reminderDate - currentDate;
+        var rs = new Date(r).getSeconds();
+        var rm = new Date(r).getMinutes() * 60;
+        var rh = (new Date(r).getHours() - 1) * 60 * 60;
+        var rd = (new Date(r).getDate() - 1) * 24 * 3600;
+        var rmonth = new Date(r).getMonth() * rd;
+        var total = rs + rm + rh + rd + rmonth
+        var ID = setInterval(alarm2, 1000);
+       
+        function alarm2() {
+        if(total > 0){
+        total--
+        }else if(total == 0){
+        modal.innerHTML += `<div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reminder !!!</h2>
+            <p>${message}</p>
+        </div>`;
+        modal.style.display = "block";
+        const modalClose = document.querySelectorAll(".close");
+        modalClose.forEach(btn => {
+        btn.addEventListener("click", ()=> modal.style.display = "none")
+        });
+        clearInterval(ID)
+        }else{
+        modal.innerHTML += `<div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Time passed</h2>
+            <p>${message}</p>
+        </div>`;
+        modal.style.display = "block";
+        const modalClose = document.querySelectorAll(".close");
+        modalClose.forEach(btn => {
+        btn.addEventListener("click", ()=> modal.style.display = "none")
+        });
+        clearInterval(ID)
+        }
+        }
+        return r
+        };
+
+
+        const addTask = (e) =>{
+            if(e.keyCode == 13 || e.target.id == "addBtn"){
+                let month = document.querySelector("#months").value;
+                let year = new Date().getFullYear();
+                let day = document.querySelector("#days").value;
+                let min = document.querySelector("#minutes").value;
+                let hour = document.querySelector("#hours").value;
+                let sec = document.querySelector("#seconds").value;
+
+               
+               
+                if(alarm(input.value, year, month, day, hour, min, sec) > 0){
+                     document.querySelector(".card-container").innerHTML += `<div class="card">
+                    <div class="content">
+                        <p>${input.value}</p>
+                    </div>
+                    <p id="time">${hour}hr : ${min}min : ${sec}sec &nbsp; &nbsp; ${day}-${month}-${year}</p>
+                    <button class="delete">remove</button>
+                </div>`;
+
+                const date = `<p id="time">${hour}hr : ${min}min : ${sec}sec &nbsp; &nbsp; ${day}-${month}-${year}</p>`;
+                saveTask([input.value, date, year, month, day, hour, min, sec])
+                const deleteBtns = document.querySelectorAll(".delete");
+                deleteBtns.forEach(btn => {
+                btn.addEventListener("click", (e)=>{
+                    removeTodo(e.target.parentElement);
+                    e.target.parentElement.remove()
+                })
+                })
+
+                alarm(input.value, year, month, day, hour, min, sec);
+
+                input.value=""
+                } else{
+                        modal.innerHTML += `<div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>The date you chose has passed please select another date</h2>
+                    </div>`;
+                    modal.style.display = "block";
+                    const modalClose = document.querySelectorAll(".close");
+                    modalClose.forEach(btn => {
+                    btn.addEventListener("click", ()=> {modal.style.display = "none"; modal.innerHTML = ""})
+                    });
+                }
+            }
+        }
+
+        //SAVING TASK TO LOCAL STORAGE
+        const saveTask = (todo) =>{
+        // checkStorage();
+        if(localStorage.getItem("todos") === null) todos = [];
+        else{
+        todos = JSON.parse(localStorage.getItem("todos"))
+        }
+        todos.push(todo);
+        localStorage.setItem("todos", JSON.stringify(todos));
+        }
+
+        // displaying the todo list on page load
+        const displayTodo = () => {
+        if(localStorage.getItem("todos") === null) todos = [];
+        else{
+        todos = JSON.parse(localStorage.getItem("todos"))
+        }
+        todos.forEach(todo =>{
+        document.querySelector(".card-container").innerHTML += `<div class="card">
+            <div class="content">
+                <p>${todo[0]}</p>
+            </div>
+            ${todo[1]}
+            <button class="delete">remove</button>
+        </div>`;
+         alarm(todo[0], todo[2], todo[3], todo[4], todo[5], todo[6], todo[7])
+
+        const deleteBtns = document.querySelectorAll(".delete");
+        deleteBtns.forEach(btn => {
+        console.log(1)
+        btn.addEventListener("click", (e)=>{
+            removeTodo(e.target.parentElement)
+            e.target.parentElement.remove();
+        })
+        })
+        })
+        }
+
+        const removeTodo = (todo) => {
+        if(localStorage.getItem("todos") === null) todos = [];
+        else{
+        todos = JSON.parse(localStorage.getItem("todos"))
+        }
+        const todoIndex = todos.indexOf(todo.children[0].textContent);
+        todos.splice(todoIndex, 1);
+        localStorage.setItem("todos", JSON.stringify(todos))
+        }
+
+
+        // event listeners
+        input.addEventListener("keypress", addTask);
+        button.addEventListener("click", addTask);
+        document.addEventListener('DOMContentLoaded', displayTodo)
+    </script>
+</body>
+</html>

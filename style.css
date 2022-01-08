@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D1D2CC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 2em auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+   font-size: 1.5em;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 1.3em;
+    width: 100%;
+    padding: 1em;
+    color: white;
+    background: linear-gradient(to right, rgb(39, 224, 70), rgb(109, 233, 26));
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+header a:hover{
+    padding: 0.3em 16px;
+    background: #e9ba22;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+.content p{
+    white-space: wrap;
+}
+
+.card {
+    background: #F7FFF4;
+    margin-bottom: 1em;
+    width: 220px;
+    padding: 1.5em;
+    position: relative;
+}
+
+.card #time {
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #a3513b;
+    padding: 0.7em 0 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.card button {
+    margin: 1em 0 0 0;
+    padding: 0.4em 16px;
+    background: rgb(231, 231, 46);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+}
+
+#demo {
+    text-align: center;
+}
+
+.select {
+    position: relative;
+    margin: 1em 10px 10px 10px;
+    width: 5rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    background: #f6d365;
+    padding: 0.34em 0.45em;
+    color: white;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    color: #db8972;
+    padding: 0.7em;
+    width: 4.4rem;
+}
+
+.select-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.set {
+    background: #fff;
+    margin-bottom: 1em;
+    padding: 1em 0;
+}
+
+.message {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+input {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #f6d365;
+}
+
+.message button {
+    background: #e9ba22;
+    padding: 0.3em 16px;
+    border: none;
+    color: white;
+    margin: 1em 0;
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (min-width: 489px) {
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
